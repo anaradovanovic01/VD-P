@@ -1,0 +1,236 @@
+body {
+    background-image: url("../slike/background.jpg");
+    background-size: 750px;
+}
+
+.header{
+    background : white;
+    display: flex;
+    padding: 0.5%;
+}
+
+.header img {
+    float: left;
+    width: 260px;
+    height: 120px;
+    margin-right: 30px;
+}
+  
+.header h1 {
+    font-variant: small-caps;
+    font-style: italic;
+    line-height: 120px;
+    color: rgb(79, 46, 26);
+}
+
+.nav-link {
+    color: white;
+}
+
+.active{
+    color:white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline 2px solid white !important;
+    font-weight: 600;
+    color: white;
+}
+
+#jezik {
+    display: flex; justify-content: left;
+}
+
+.nav-item-dropdown {
+    padding-top: 8px;
+}
+
+.navbar .nav-item .dropdown-menu{ 
+    display: none; 
+}
+	
+.navbar .nav-item:hover .dropdown-menu{ 
+    display: block; 
+}
+	
+.navbar .nav-item .dropdown-menu{ 
+    margin-top:0; 
+}
+
+.roze-pozadina {
+    /*background-color: rgb(251, 197, 153);*/
+    background-color: rgb(251,184,164);
+}
+
+.roze-slova{
+    color: rgb(251,184,164);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-size: x-small;
+    text-align: center;
+    background: grey;
+    font-style: italic;
+}
+
+.center-div-roze {
+    background-color: rgb(251,184,164);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    padding-bottom: 20px;
+    min-height: 80vh;
+}
+
+.center-div-form {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    margin: 0;
+    justify-content: space-around;
+}
+
+th{
+    text-align: left;
+}
+
+#tabela input:not([type="radio"]), textarea {
+    width: 250px;
+}
+
+.hover-black:hover {
+    color:black;
+    font-weight: 700;
+}
+
+.unesi{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.center{
+    text-align: center;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sortiraj{
+    padding-left: 15px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+.nalog{
+    background-color: whitesmoke;
+    margin-top: 25px;
+}
+
+.img-in-card{
+    width: 200px;
+    height: 200px;
+    margin: 7%;
+}
+
+.pas{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;  
+}
+
+form {
+    margin: 8px;
+}
+
+.zvezda{
+    color:rgb(251, 197, 153)
+}
+
+.korisnik td a{
+    color:white;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/*otvaranje slike*/
+.slikeUGaleriji:hover {
+    opacity: 0.75;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0.1)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }

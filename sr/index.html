@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nada za životinje "Riska" - Početna</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src=""> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src='../slike/logo.png'>
+        <h1>Nada za životinje "Riska"</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link active" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Životinje</a>
+             <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="psi.html">Psi</a></li>
+             <li><a class="dropdown-item" href="macke.html">Mačke</a></li>
+             <li><a class="dropdown-item" href="ptice.html">Ptice</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="izgubljeniLjubimci.html">Izgubljeni ljubimci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dodajOglas.html">Dodaj oglas</a>
+          </li>
+          <li class="nav-item" id = "nalog">
+              <a class="nav-link" href="mojNalog.html">Moj nalog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="oNama.html">O nama</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item active" >
+              <a class="nav-link" href="#">SR</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" href="../en/index.html">EN</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="align-items-center center-div-roze">
+        <h1 class="text-center text-white font-italic mt-3">Dobrodošli!</h1>
+        <div class="row">
+            
+            <div class="col-md-6 col-sm-12">
+                <div class="bg-white my-4 mr-1 ml-4 p-3 rounded">
+                    <h4 class="text-center">Novi životinje:</h4>
+                    <div class="card m-3 p-2">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img id="slika_zivotinje1" class="img-fluid rounded-start img-in-card" style="width: 150px; height: 150px">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" id="ime_zivotinje1"></h5>
+                              <p class="card-text">
+                                Opis: <span id="opis_zivotinje1"></span>
+                            </p>
+                            </div>
+                            <button id="pogledaj_profil_zivotinje1" class="btn btn-dark" style="margin-left: 2.5%;">Pogledaj profil</button>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="card m-3 p-2">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img id="slika_zivotinje2" class="img-fluid rounded-start img-in-card" style="width: 150px; height: 150px">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" id="ime_zivotinje2"></h5>
+                              <p class="card-text">
+                                Opis: <span id="opis_zivotinje2"></span>
+                                    
+                            </p>
+                            </div>
+                            <button id="pogledaj_profil_zivotinje2" class="btn btn-dark" style="margin-left: 2.5%;">Pogledaj profil</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-2">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img id="slika_zivotinje3" class="img-fluid rounded-start img-in-card" style="width: 150px; height: 150px">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" id="ime_zivotinje3"></h5>
+                              <p class="card-text">
+                                Opis: <span id="opis_zivotinje3"></span>
+                            </p>
+                            </div>
+                            <button id="pogledaj_profil_zivotinje3" class="btn btn-dark" style="margin-left: 2.5%;">Pogledaj profil</button>
+                          </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="bg-white my-4 ml-1 mr-4 p-3 rounded">
+                    <h4 class="text-center">Izgubljeni ljubimci:</h4>
+                    <div class="card m-3 p-2">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img id="slika_oglas1" class="img-fluid rounded-start img-in-card" style="width: 150px; height: 150px">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" id="ime_oglas1"></h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <td class="align-top">Opis: </td>
+                                        <td id="opis_oglas1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefon:&nbsp;</td>
+                                        <td id="telefon_oglas1"></td>
+                                    </tr>
+                                </table>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="card m-3 p-2">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img id="slika_oglas2" class="img-fluid rounded-start img-in-card" style="width: 150px; height: 150px">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" id="ime_oglas2"></h5>
+                              <p class="card-text">
+                                <table>
+                                    <tr>
+                                        <td class="align-top">Opis: </td>
+                                        <td id="opis_oglas2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefon:&nbsp;</td>
+                                        <td id="telefon_oglas2"></td>
+                                    </tr>
+                                </table> 
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 p-2">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img id="slika_oglas3" class="img-fluid rounded-start img-in-card" style="width: 150px; height: 150px">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title" id="ime_oglas3"></h5>
+                              <p class="card-text" style="padding-bottom: 0!important;">
+                                <table>
+                                    <tr>
+                                        <td class="align-top">Opis: </td>
+                                        <td id="opis_oglas3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefon:&nbsp;</td>
+                                        <td id="telefon_oglas3"></td>
+                                    </tr>
+                                </table>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović i Jovana Jaćimović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

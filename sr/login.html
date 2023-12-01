@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nada za životinje "Riska" - Prijava</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="login.js"> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src='../slike/logo.png'>
+        <h1>Nada za životinje "Riska"</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Životinje</a>
+             <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="psi.html">Psi</a></li>
+             <li><a class="dropdown-item" href="macke.html">Mačke</a></li>
+             <li><a class="dropdown-item" href="ptice.html">Ptice</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="izgubljeniLjubimci.html">Izgubljeni ljubimci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dodajOglas.html">Dodaj oglas</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="mojNalog.html">Moj nalog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="oNama.html">O nama</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item active" >
+              <a class="nav-link" href="#">SR</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" href="../en/login.html">EN</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="row text-center center-div-form">
+        <table class="table table-dark table-striped " id="tabela" style="width: 350px;">
+            <tr>
+                <th>
+                    Mejl:
+                </th>
+                <td>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Lozinka:
+                </th>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="btn roze-pozadina" id="login" onclick="ulogujSe()">
+                        Prijavi se
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Nemate nalog? <a href="registracija.html" class="roze-slova"> Registrujte se</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović i Jovana Jaćimović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

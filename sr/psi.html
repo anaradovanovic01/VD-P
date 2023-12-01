@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nada za životinje "Riska" - Psi</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="izlistaneZivotinje.js"> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src='../slike/logo.png'>
+        <h1>Nada za životinje "Riska"</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Životinje</a>
+             <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="psi.html">Psi</a></li>
+             <li><a class="dropdown-item" href="macke.html">Mačke</a></li>
+             <li><a class="dropdown-item" href="ptice.html">Ptice</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="izgubljeniLjubimci.html">Izgubljeni ljubimci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dodajOglas.html">Dodaj oglas</a>
+          </li>
+          <li class="nav-item" id = "nalog">
+              <a class="nav-link" href="mojNalog.html">Moj nalog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="oNama.html">O nama</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">SR</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" href="../en/psi.html">EN</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="align-items-center center-div-roze" id="lista">
+        <div class='container'> 
+            <div class="mt-3 mb-4">
+                <span>
+                    <b>Sortiraj po:</b> &nbsp;
+                    <input type="radio" name="sort" value="1"> Godinama &nbsp;
+                    <input type='radio' name='sort' value="2" checked> Nazivu &nbsp;
+                    <input type="checkbox" name="opadajuce" id="opadajuce"> Opadajuce &nbsp;
+                    <button type="button" class="btn btn-dark" id="sortiraj">Sortiraj</button>
+                </span>
+                <span class="float-right">
+                    <b>Pretraži po:</b> &nbsp;
+                    <input type="radio" name="pretraga" value="1"> Godinama &nbsp;
+                    <input type='radio' name='pretraga' value="2" checked> Nazivu &nbsp;
+                    <input type="text" id ="polje_pretrage">&nbsp;
+                    <button type="button" class="btn btn-dark" id="pretrazi">Pretraži</button>
+                </span>
+            </div>   
+        </div>
+        <input type="hidden" value="0" id='tipZivotinje'>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović i Jovana Jaćimović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

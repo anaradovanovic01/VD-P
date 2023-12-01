@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nada za životinje "Riska" - Profil životinje</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="nalogZivotinja.js"> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src='../slike/logo.png'>
+        <h1>Nada za životinje "Riska"</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Životinje</a>
+             <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="psi.html">Psi</a></li>
+             <li><a class="dropdown-item" href="macke.html">Mačke</a></li>
+             <li><a class="dropdown-item" href="ptice.html">Ptice</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="izgubljeniLjubimci.html">Izgubljeni ljubimci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dodajOglas.html">Dodaj oglas</a>
+          </li>
+          <li class="nav-item" id = "nalog">
+              <a class="nav-link" href="mojNalog.html">Moj nalog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="oNama.html">O nama</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item active" >
+              <a class="nav-link" href="#">SR</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" href="../en/index.html">EN</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="align-items-center center-div-roze">
+    <section style="margin: 1%; margin-top: 0%;">
+        <div class="row">
+            <div class="col">
+              <nav aria-label="breadcrumb" class="rounded-3 p-3">
+                <ol class="breadcrumb mb-0 bg-white">
+                  <li class="breadcrumb-item"><a href="index.html" class="hover-black">Početna</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="hover-black">Životinje</a></li>
+                  <li class="breadcrumb-item"><a class="hover-black" id="ubaci-vrstu"></a></li>
+                  <li class="breadcrumb-item active" aria-current="page" id="ubaci-ime"></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-4">
+                <div class="card-body text-center" id="heder">
+                  <h4 class="mb-4" id="imeNaslov"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Ime</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="ime"></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Opis izgleda</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="opis"></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Težina</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="tezina"></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Pol</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="pol"></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Broj godina</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="godine"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4 mb-md-0">
+                <div class="card-body"> 
+                    <div class="d-flex align-items-center justify-content-between mb-3"> 
+                        <h5 class="mb-2 ml-2">Galerija slika</h5>
+                    </div> 
+                    <div class="row" id="slike"> 
+                    </div>  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4 mb-md-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-3"> 
+                        <h5 class="mb-2 ml-2">Video galerija</h5>
+                    </div> 
+                    <div class="row" id="videi">
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović i Jovana Jaćimović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>
